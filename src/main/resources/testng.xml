@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Pizza Hut App Test Cases" verbose="0">
+  <listeners>
+		<listener class-name="com.pizza.qa.reports.ExtentReporterNG" />
+	</listeners>  
+	<test name="Pizza Hut App Test Cases" verbose="0">
+		<groups>
+			<run>
+				<!--  <include name = "OrderFlowGuestUser"/>
+				<include name = "MultiplePizzaGuestUser"/>
+				<include name = "MultiplePizzaLoginUser"/>
+				<include name = "TakeAwaywithGuestUser"/>--> 
+				<include name = "TakeAwaywithLoginUser"/> 
+			</run>
+		</groups>
+		<classes>
+			<class name="com.pizza.qa.testcases.PlaceOrderSummaryPageTest" />
+
+		</classes>
+	</test>
+</suite>
